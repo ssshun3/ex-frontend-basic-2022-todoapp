@@ -3,7 +3,7 @@ import Component from "./index";
 
 export default {
   component: Component,
-  title: "Example",
+  title: "Atoms/Checkbox",
   parameters: {
     backgrounds: {
       default: "dark",
@@ -14,3 +14,6 @@ export default {
 const Template = (args) => <Component {...args} />;
 
 export const Default = Template.bind({});
+Default.args = {
+  onClick: () => console.log("clicked"),
+};
